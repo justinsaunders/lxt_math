@@ -17,7 +17,7 @@ Supported Compilers:
 gcc, icc, clang, Visual C++
 
 Supported Operating Systems:
-Windows, Mac OS X, Linux
+Windows, iOS, Mac OS X, Linux
 
 See the project status page here: 
 https://github.com/justinsaunders/lxt_math/wiki/Status
