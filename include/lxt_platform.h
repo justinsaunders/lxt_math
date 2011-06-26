@@ -13,9 +13,9 @@
 
 // Supported architectures
 #define LXT_MATH_ARCH_UNKNOWN   -1
-#define LXT_MATH_ARCH_ARM		0
-#define LXT_MATH_ARCH_X86		1
-#define LXT_MATH_ARCH_PPC		2
+#define LXT_MATH_ARCH_ARM       0
+#define LXT_MATH_ARCH_X86       1
+#define LXT_MATH_ARCH_PPC       2
 
 #if defined ( __i386__ )
     #define LXT_MATH_ARCH_CURRENT LXT_MATH_ARCH_X86
@@ -38,15 +38,15 @@
 #define LXT_MATH_OS_LINUX   3
 
 #if defined ( __APPLE__ ) && defined ( __MACH__ )
-	#if TARGET_OS_IPHONE
-		#define LXT_MATH_OS_CURRENT LXT_MATH_OS_IOS
-	#else
-		#define LXT_MATH_OS_CURRENT LXT_MATH_OS_OSX
-	#endif
+    #if TARGET_OS_IPHONE
+        #define LXT_MATH_OS_CURRENT LXT_MATH_OS_IOS
+    #else
+        #define LXT_MATH_OS_CURRENT LXT_MATH_OS_OSX
+    #endif
 #endif
 
 #if !defined ( LXT_MATH_OS_CURRENT )
-	#error "Unsupported platform for LXT math."
+    #error "Unsupported platform for LXT math."
 #endif
 
 // Debugging enabled (non release build)
