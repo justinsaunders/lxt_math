@@ -25,12 +25,12 @@
 /*
  * LXT math main header for C functions.
  *
- * If LXT_MATH_IMPL_OVERRIDE is defined, that will define what implemtation is
+ * If LXT_MATH_IMPL_OVERRIDE is defined, that will define what implementation is
  * used (useful for testing).
  */
 #include _LXT_MATH_MATH_H_
 
-#include "lxt_platform.h"
+#include "core/lxt_platform.h"
 
 // Choose an implementation
 #ifdef LXT_MATH_IMPL_OVERRIDE
@@ -39,9 +39,9 @@
 #endif
 
 #if LXT_MATH_IMPL_CURRENT == LXT_MATH_IMPL_REF
-    #include "c/impl_ref.h"
+    #include "core/impl_ref.h"
 #elif LXT_MATH_IMPL_CURRENT == LXT_MATH_IMPL_SSE
-    #include "c/impl_sse.h"
+    #include "core/impl_sse.h"
 #else
     #error "Unsupported implementation"
 #endif
